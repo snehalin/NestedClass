@@ -24,6 +24,7 @@ public class NestedClass {
 	}
 	void m()
 	{
+		//m2();
 		 System.out.println("in method a="+a+" ");
 	}
 	 
@@ -36,6 +37,7 @@ public class NestedClass {
 	  }
 	  void m2()
 	  {
+		  m();
 		  System.out.println("in method m2 a="+a+"b="+b);  
 	  }
 	
@@ -46,7 +48,7 @@ public class NestedClass {
 		NestedClass ob=new NestedClass();
 		NestedClass.InnerClass  ob2=ob.new InnerClass();
 		ob2.m2();
-		ob.m();
+		//ob.m();
 	}
 	
 }
